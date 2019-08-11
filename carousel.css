@@ -56,8 +56,8 @@ body {
   ------------------------- */
   
   .featurette {
-      padding-right: 10rem;
-      padding-left: 10rem;
+      margin-right: 50px;
+      margin-left: 50px;
   }
 
   .featurette-divider {
@@ -88,8 +88,3 @@ body {
     }
   }
   
-  @media (min-width: 62em) {
-    .featurette-heading {
-      /* margin-top: 7rem; */
-    }
-  }
