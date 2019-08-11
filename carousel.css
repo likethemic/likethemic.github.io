@@ -7,6 +7,10 @@ body {
     padding-bottom: 3rem;
     color: #5a5a5a;
   }
+
+.navbar {
+      background-color: #00265c;
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
