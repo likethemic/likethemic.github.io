@@ -55,6 +55,11 @@ body {
   /* Featurettes
   ------------------------- */
   
+  .featurette {
+      padding-right: 10rem;
+      padding-left: 10rem;
+  }
+
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
@@ -85,6 +90,6 @@ body {
   
   @media (min-width: 62em) {
     .featurette-heading {
-      margin-top: 7rem;
+      /* margin-top: 7rem; */
     }
   }
