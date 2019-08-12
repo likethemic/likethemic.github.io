@@ -96,3 +96,26 @@ body {
   .faq_content {
       margin: 50px;
   }
+
+  .footer {
+      position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding-right: 8.5rem;
+    padding-left: 8.5rem;
+    margin: 2rem;
+  }
+
+  .contact_page div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contact_page p {
+      font-size: 150%;
+  }
+
+  .contact_page h2 {
+      font-size: 4rem;
+      font-weight: 400;
+  }
