@@ -111,7 +111,7 @@ body {
     padding-right: 2rem;
   }
 
-  .contact_page p {
+  .contact_page .contact_content {
       font-size: 150%;
   }
 
