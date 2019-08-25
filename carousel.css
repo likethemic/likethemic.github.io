@@ -121,5 +121,9 @@ body {
   }
 
   #header-text {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Alfa Slab One', cursive;
+  }
+
+  .nav-link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
