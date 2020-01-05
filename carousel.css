@@ -25,11 +25,18 @@ body {
     z-index: 10;
     text-shadow: .2rem .2rem .4rem #000000;
   }
-  
+
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 32rem;
   }
+
+@media (orientation:portrait) {
+  .carousel-item {
+    height:0rem;
+  }
+}
+
   .carousel-item > img {
     position: absolute;
     top: 0;
