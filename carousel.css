@@ -100,26 +100,56 @@ body {
     }
   }
   
+@media (orientation:landscape) {
   .faq_content {
-      margin: 50px;
-  }
+    margin: 50px;
+}
+}
 
+@media (orientation:portrait) {
+  .faq_content {
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+}
+
+@media (orientation:landscape) {
   .footer {
-      position: fixed;
-    bottom: 0px;
-    left: 0px;
-    padding-right: 8.5rem;
-    padding-left: 8.5rem;
-    margin: 2rem;
+    position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding-right: 8.5rem;
+  padding-left: 8.5rem;
+  margin: 2rem;
   }
+}
 
+@media (orientation:portrait) {
+  .footer {
+    position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin:3px;
+  }
+}
+
+ @media (orientation:landscape) {
   .contact_page div {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+ }
 
-  .contact_page .contact_content {
+ @media (orientation:portrait) {
+   .contact_page {
+     padding:0rem;
+   }
+ }
+
+  @media (orientation:landscape) {
+    .contact_page .contact_content {
       font-size: 150%;
+  }
   }
 
   .contact_page h2 {
