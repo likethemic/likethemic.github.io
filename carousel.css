@@ -2,6 +2,13 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+:root {
+  --bg-color: #4b96b6;
+  --banner-img-height: 28rem;
+  /* --background-grad: linear-gradient(90deg, rgba(8,2,110,1) 0%, rgba(2,76,167,1) 35%, rgba(34,211,227,1) 100%); */
+  --background-grad: linear-gradient(90deg, rgba(35,42,131,1) 0%, rgba(2,76,167,1) 35%, rgba(0,155,175,1) 100%);
+}
+
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -9,15 +16,62 @@ body {
   }
 
 .navbar {
-      background-color: #00265c;
+      background-color: var(--bg-color);
+      /* background: rgb(8,2,110); */
+      background: var(--background-grad);
+  }
+
+.alt-color {
+  background-color:var(--bg-color);
+  background: var(--background-grad);
+  color: rgb(255, 255, 255);
+}
+
+.alt-color a {
+  /* color: rgb(61, 61, 61); */
+  color: rgb(6, 231, 126);
+}
+
+.main-content {
+  /* padding-top: 2rem; */
+  padding-bottom: 2rem;
+}
+
+.main-content .container .row div {
+  padding-top: 2rem;
+}
+
+  .img-container {
+    width: 100%;
+    /* height: 400px; */
+    /* height: 24rem; */
+    height: var(--banner-img-height);
+    background-image: url("./images/img_1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 50% 50%; */
   }
   
+
+  .test-img-container {
+    width: 100%;
+    height: 20rem;
+    /* height: 400px; */
+    /* height: 24rem; */
+    /* height: var(--banner-img-height); */
+    background-image: url("./images/test_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 50% 50%; */
+  }
+
+
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
   /* Carousel base class */
   .carousel {
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -28,7 +82,7 @@ body {
 
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: var(--banner-img-height);
   }
 
 @media (orientation:portrait) {
@@ -36,6 +90,7 @@ body {
     height:0rem;
   }
 }
+
 
   .carousel-item > img {
     position: absolute;
@@ -55,14 +110,13 @@ body {
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  .marketing h2 {
+  /* .marketing h2 {
     font-weight: 400;
-  }
+  } */
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
   }
-  
   
   /* Featurettes
   ------------------------- */
@@ -77,10 +131,14 @@ body {
   }
   
   /* Thin out the marketing headings */
-  .featurette-heading {
+  /* .featurette-heading {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
+  } */
+
+  .bold-heading {
+    text-align: center;
   }
   
   
@@ -118,14 +176,29 @@ body {
 
 }
 
-@media (orientation:landscape) {
+.footer {
+  bottom: 0px;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.contact-form {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+}
+
+.contact-form iframe {
+  height: 100%;
+}
+
+/* @media (orientation:landscape) {
   .footer {
-    position: fixed;
+    background-color: white;
   bottom: 0px;
   left: 0px;
   padding-right: 8.5rem;
   padding-left: 8.5rem;
-  margin: 2rem;
   }
 }
 
@@ -136,20 +209,14 @@ body {
   left: 0px;
   margin:3px;
   }
-}
+} */
 
- @media (orientation:landscape) {
-  .contact_page div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
- }
 
- @media (orientation:portrait) {
+ /* @media (orientation:portrait) {
    .contact_page {
      padding:0rem;
    }
- }
+ } */
 
   @media (orientation:landscape) {
     .contact_page .contact_content {
@@ -178,3 +245,164 @@ body {
   .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+
+  @media (orientation:portrait) {
+    .img-container {
+     display: none;
+   }
+ }
+
+
+ .home-img {
+    width: 100%;
+    /* height: 400px; */
+    /* height: 24rem; */
+    height: var(--banner-img-height);
+    background-image: url("./images/IMG_6265.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 50% 50%; */
+ }
+
+ .pricing-plan-box {
+   box-shadow: 0.5px 0.5px 5px 1px gray;
+   /* box-shadow: 0px 0px 3px 0.5px black; */
+   border-radius: 10px;
+   margin: 0.5rem;
+   padding-top: 1.4rem;
+   text-align: center;
+ }
+
+
+ .pricing-plan-box h4 {
+   color: black;
+   font-weight: 600;
+   font-size: 1.1rem;
+ }
+
+ .pricing-plan-box p {
+   font-weight: 600;
+  font-style: italic;
+}
+
+ .pricing-plan-box li {
+   text-align: left;
+ }
+
+ .pricing-plan-container {
+   padding-top: 1rem;
+ }
+
+ .pricing-plan-box:hover {
+  box-shadow: 0px 0px 5px 2px var(--bg-color);
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding-top: 1.4rem;
+  text-align: center;
+  background: var(--background-grad);
+  color: white;
+}
+
+.pricing-plan-box:hover h4 {
+  color: white;
+}
+
+.pricing-plan-box:hover hr {
+  border-top: 1px solid white;
+}
+
+.pricing-plan-box hr {
+  border-top: 1px solid gray;
+}
+
+.class-img-container {
+  /* margin: auto;
+  display: block;
+  width: 50%;
+  /* height: 400px; */
+  /* height: 24rem; */
+  /* height: var(--banner-img-height); */
+  /* height: 10rem;
+  background-image: url("./images/test_img.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  /* background-position: 50% 50%; */
+}
+
+.class-img-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#forum-img {
+
+}
+
+#policy-img {
+  
+}
+
+.class-box {
+  margin: 0.5rem;
+}
+
+.class-box:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 1);
+  margin: 0.5rem;
+}
+
+#img-classes {
+  background-image: url("./images/IMG_2692.jpeg");
+  /* background-image: url("./images/IMG_2816.jpeg"); */
+}
+
+#img-about {
+  background-image: url("./images/IMG_2690.jpeg");
+  /* background-image: url("./images/IMG_2816.jpeg"); */
+}
+
+#img-contact {
+  background-image: url("./images/IMG_2750.jpeg");
+  /* background-image: url("./images/IMG_2816.jpeg"); */
+}
+
+#img-home {
+  background-image: url("./images/IMG_0895.jpeg");
+}
+
+@media(orientation: landscape) {
+  .down-2-rem {
+    margin-top: 2rem;
+  }
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
