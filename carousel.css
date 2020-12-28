@@ -3,10 +3,12 @@
 /* Padding below the footer and lighter body text */
 
 :root {
-  --bg-color: #4b96b6;
+  /*--bg-color: #4b96b6;*/
   --banner-img-height: 28rem;
   /* --background-grad: linear-gradient(90deg, rgba(8,2,110,1) 0%, rgba(2,76,167,1) 35%, rgba(34,211,227,1) 100%); */
-  --background-grad: linear-gradient(90deg, rgba(35,42,131,1) 0%, rgba(2,76,167,1) 35%, rgba(0,155,175,1) 100%);
+  /*--background-grad: linear-gradient(90deg, rgba(35,42,131,1) 0%, rgba(2,76,167,1) 35%, rgba(0,155,175,1) 100%);*/
+  --bg-color: rgb(36,57,223);
+  --background-grad: linear-gradient(135deg, rgba(36,57,223,1) 0%, rgba(39,107,189,1) 53%, rgba(39,156,203,1) 76%, rgba(11,207,180,1) 100%);
 }
 
 body {
@@ -15,11 +17,37 @@ body {
     color: #5a5a5a;
   }
 
+.instructor {
+  margin-top: 2rem;
+}
+
+.instructor h3 {
+  text-align: left;
+}
+
 .navbar {
-      background-color: var(--bg-color);
-      /* background: rgb(8,2,110); */
-      background: var(--background-grad);
-  }
+      /*background-color: var(--bg-color);*/
+      /*background: var(--background-grad);*/
+
+      background-color: white;
+      box-shadow: 0px 1px 5px 0px gray;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.active .nav-link {
+  font-weight: 700;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgb(60, 60, 60);
+}
 
 .alt-color {
   background-color:var(--bg-color);
@@ -239,11 +267,13 @@ body {
 }
 
   #header-text {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One', Georgia;
   }
 
   .nav-link {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
   }
 
 
@@ -382,6 +412,10 @@ body {
   }
 }
 
+* {
+  font-family: Georgia;
+}
+
 h2 {
   font-family: 'Roboto Slab', serif;
 }
@@ -395,14 +429,16 @@ h4 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: Georgia;
+  font-size: 1.05rem;
 }
 
 li {
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: Georgia;
 }
 
 p strong {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
